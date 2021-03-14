@@ -55,7 +55,7 @@ config :app_one,
 config :app_one, AppOne.Repo,
   database: "app_one_repo",
   username: "postgres",
-  hostname: "localhost"
+  hostname: "postgres"
 
 ###
 # App Two
@@ -67,7 +67,7 @@ config :app_two,
 config :app_two, AppTwo.Repo,
   database: "app_two_repo",
   username: "postgres",
-  hostname: "localhost"
+  hostname: "postgres"
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
