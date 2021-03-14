@@ -25,9 +25,6 @@ config :phoenix, :json_library, Jason
 # Web One
 ###
 
-config :web_one,
-  ecto_repos: [WebOne.Repo]
-
 # Configures the endpoint
 config :web_one, WebOneWeb.Endpoint,
   url: [host: "localhost"],
@@ -39,9 +36,6 @@ config :web_one, WebOneWeb.Endpoint,
 ###
 # Web Two
 ###
-
-config :web_two,
-  ecto_repos: [WebTwo.Repo]
 
 # Configures the endpoint
 config :web_two, WebTwoWeb.Endpoint,

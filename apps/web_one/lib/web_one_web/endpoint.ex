@@ -7,7 +7,7 @@ defmodule WebOneWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_web_one_key",
-    signing_salt: "fhgdphfH"
+    signing_salt: "EJs7bBl/"
   ]
 
   socket "/socket", WebOneWeb.UserSocket,
@@ -32,7 +32,6 @@ defmodule WebOneWeb.Endpoint do
     socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket
     plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
-    plug Phoenix.Ecto.CheckRepoStatus, otp_app: :web_one
   end
 
   plug Phoenix.LiveDashboard.RequestLogger,

@@ -7,8 +7,6 @@ defmodule WebOne.Application do
 
   def start(_type, _args) do
     children = [
-      # Start the Ecto repository
-      WebOne.Repo,
       # Start the Telemetry supervisor
       WebOneWeb.Telemetry,
       # Start the PubSub system

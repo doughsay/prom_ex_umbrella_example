@@ -30,13 +30,6 @@ defmodule WebOneWeb.Telemetry do
         unit: {:native, :millisecond}
       ),
 
-      # Database Metrics
-      summary("web_one.repo.query.total_time", unit: {:native, :millisecond}),
-      summary("web_one.repo.query.decode_time", unit: {:native, :millisecond}),
-      summary("web_one.repo.query.query_time", unit: {:native, :millisecond}),
-      summary("web_one.repo.query.queue_time", unit: {:native, :millisecond}),
-      summary("web_one.repo.query.idle_time", unit: {:native, :millisecond}),
-
       # VM Metrics
       summary("vm.memory.total", unit: {:byte, :kilobyte}),
       summary("vm.total_run_queue_lengths.total"),

@@ -7,8 +7,6 @@ defmodule WebTwo.Application do
 
   def start(_type, _args) do
     children = [
-      # Start the Ecto repository
-      WebTwo.Repo,
       # Start the Telemetry supervisor
       WebTwoWeb.Telemetry,
       # Start the PubSub system

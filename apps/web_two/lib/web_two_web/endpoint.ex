@@ -7,7 +7,7 @@ defmodule WebTwoWeb.Endpoint do
   @session_options [
     store: :cookie,
     key: "_web_two_key",
-    signing_salt: "ZNpawKxG"
+    signing_salt: "7L/HqWa7"
   ]
 
   socket "/socket", WebTwoWeb.UserSocket,
@@ -32,7 +32,6 @@ defmodule WebTwoWeb.Endpoint do
     socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket
     plug Phoenix.LiveReloader
     plug Phoenix.CodeReloader
-    plug Phoenix.Ecto.CheckRepoStatus, otp_app: :web_two
   end
 
   plug Phoenix.LiveDashboard.RequestLogger,

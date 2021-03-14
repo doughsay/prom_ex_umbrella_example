@@ -28,13 +28,7 @@ defmodule WebOneWeb.ChannelCase do
     end
   end
 
-  setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(WebOne.Repo)
-
-    unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(WebOne.Repo, {:shared, self()})
-    end
-
+  setup _tags do
     :ok
   end
 end
