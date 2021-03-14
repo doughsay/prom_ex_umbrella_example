@@ -45,6 +45,30 @@ config :web_two, WebTwoWeb.Endpoint,
   pubsub_server: WebTwo.PubSub,
   live_view: [signing_salt: "Cc2lfvFg"]
 
+###
+# App One
+###
+
+config :app_one,
+  ecto_repos: [AppOne.Repo]
+
+config :app_one, AppOne.Repo,
+  database: "app_one_repo",
+  username: "postgres",
+  hostname: "localhost"
+
+###
+# App Two
+###
+
+config :app_two,
+  ecto_repos: [AppTwo.Repo]
+
+config :app_two, AppTwo.Repo,
+  database: "app_two_repo",
+  username: "postgres",
+  hostname: "localhost"
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"
