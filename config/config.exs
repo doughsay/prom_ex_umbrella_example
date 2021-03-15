@@ -69,6 +69,20 @@ config :app_two, AppTwo.Repo,
   username: "postgres",
   hostname: "postgres"
 
+###
+# Prom Metrics
+###
+
+config :prom_metrics, PromMetrics.PromEx,
+  manual_metrics_start_delay: :no_delay,
+  drop_metrics_groups: [],
+  grafana: [
+    host: "http://grafana:3000",
+    auth_token:
+      "eyJrIjoiNDdsallieGxMaWVKdFV6QWs1ZkVYT3IxbnA1cURHTzMiLCJuIjoicHJvbV9leF8yIiwiaWQiOjF9"
+  ],
+  metrics_server: [port: 4021]
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"

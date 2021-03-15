@@ -3,3 +3,4 @@ deps
 docker_data
 apps/web_one/assets/node_modules
 apps/web_two/assets/node_modules
+docker*

@@ -17,7 +17,8 @@ COPY apps/web_two/assets/package.json apps/web_two/assets/
 RUN cd apps/web_one/assets && npm install
 RUN cd apps/web_two/assets && npm install
 
-COPY . .
+COPY apps ./apps
+COPY config ./config
 
 # Run frontend build, compile, and digest assets
 RUN cd apps/web_one/assets/ && \
