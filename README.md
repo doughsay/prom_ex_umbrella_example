@@ -14,7 +14,7 @@ docker-compose up -d --build
 Once everything is running, you have to log into Grafana for the first time, and
 create an API key with the `admin` role.
 
-Add the API key where it says `<YOU_API_KEY_HERE>` in `config/config.exs`.
+Add the API key where it says `<YOUR_API_KEY_HERE>` in `config/config.exs`.
 
 Then re-build and re-launch the app:
 

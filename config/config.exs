@@ -78,8 +78,7 @@ config :prom_metrics, PromMetrics.PromEx,
   drop_metrics_groups: [],
   grafana: [
     host: "http://grafana:3000",
-    auth_token:
-      "eyJrIjoiNDdsallieGxMaWVKdFV6QWs1ZkVYT3IxbnA1cURHTzMiLCJuIjoicHJvbV9leF8yIiwiaWQiOjF9"
+    auth_token: "<YOUR_API_KEY_HERE>"
   ],
   metrics_server: [port: 4021]
 
